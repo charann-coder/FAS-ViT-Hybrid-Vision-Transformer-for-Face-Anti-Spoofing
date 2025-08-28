@@ -46,7 +46,7 @@ The best model (`epoch_19.pth`) was selected based on a balance of accuracy and 
 #### Visualizations
 | Raw Confusion Matrix                               | Calibrated Confusion Matrix                        | ROC Curve                                  |
 | -------------------------------------------------- | -------------------------------------------------- | ------------------------------------------ |
-| ![Raw CM](results/plots/test_confusion_matrix_raw.png) | ![Calibrated CM](results/plots/test_confusion_matrix_calibrated.png) | ![ROC Curve](results/plots/test_roc_curve.png) |
+| ![Raw CM](plot_results/test_confusion_matrix_raw.png) | ![Calibrated CM](plot_results/test_confusion_matrix_calibrated.png) | ![ROC Curve](plot_results/test_roc_curve.png) |
 
 ---
 
