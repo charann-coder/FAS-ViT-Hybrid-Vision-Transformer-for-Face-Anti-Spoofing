@@ -112,24 +112,18 @@ This project uses the **LCC-FASD dataset**, which can be downloaded directly usi
 
 3.  **(CRITICAL) Rename and Restructure the Dataset.**
     The training scripts expect the data to be in `train`, `val`, and `test` folders. You must rename the unzipped directories to match this structure.
-
-    -   Rename `LCC_FASD` to `LCC_dataset`.
-    -   Inside `LCC_dataset`, rename the subfolders as follows:
-        -   `LCC_FASD_training`   -> `train`
-        -   `LCC_FASD_development` -> `val`
-        -   `LCC_FASD_evaluation`   -> `test`
-
+    Store the unziped dataset into LCC_dataset.
     Your final directory structure **must** look like this for the code to work:
     ```
     fas-vit/
-    ├── LCC_dataset/
-    │   ├── train/
+    ├── LCC_dataset/LCC_FASD
+    │   ├── LCC_FASD_development/
     │   │   ├── real/
     │   │   └── spoof/
-    │   ├── val/
+    │   ├── LCC_FASD_evaluation/
     │   │   ├── real/
     │   │   └── spoof/
-    │   └── test/
+    │   └── LCC_FASD_training/
     │       ├── real/
     │       └── spoof/
     ├── checkpoints/
@@ -190,12 +184,14 @@ python test.py --ckpt checkpoints/epoch_19.pth --mode min_acer
 .
 ├── checkpoints/
 │   └── epoch_19.pth        # Best performing model checkpoint
-├── configs/
-│   └── train_config.yaml   # Training configuration
-├── results/
-│   ├── plots/              # Saved plots (CM, ROC)
-│   ├── test_metrics_log.csv
-│   └── test_predictions.csv
+├── plot_results/
+│   ├── test_confidence_hist.png
+│   ├── test_confusion_matrix_calibrated.png
+│   ├── test_confusion_matrix_raw.png
+│   └── test_roc_curve.png
+├── .gitignore
+├── live_inference.py       # Script for live webcam demo
+├── model.py                # FASViTClassifier architecture definition
 ├── .gitignore
 ├── live_inference.py       # Script for live webcam demo
 ├── model.py                # FASViTClassifier architecture definition
@@ -221,7 +217,6 @@ If you use this code or find our work helpful in your research, please consider 
   title        = {FAS-ViT: Hybrid Vision Transformer for Face Anti-Spoofing},
   year         = {2025},
   publisher    = {GitHub},
-  journal      = {GitHub repository},
   howpublished = {\url{https://github.com/charann-coder/fas}}
 }
 ```
