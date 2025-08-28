@@ -1,6 +1,5 @@
 # FAS-ViT: Hybrid Vision Transformer for Face Anti-Spoofing
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![PyTorch 1.12+](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
@@ -81,8 +80,8 @@ Get the project up and running in a few simple steps.
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/fas-vit.git
-cd fas-vit
+git clone https://github.com/charann-coder/fas.git
+cd fas
 ```
 
 #### 2. Create Environment & Install Dependencies
@@ -214,7 +213,8 @@ Contributions are highly welcome! Please fork the repository and submit a pull r
 ---
 
 ## 📚 Citation
-If you use this code or find our work helpful in your research, please consider citing it:
+If you use this code or find our work helpful in your research, please consider citing it. As this is unpublished research, please cite the repository directly.
+
 ```bibtex
 @misc{fas-vit-2025,
   author       = {Y Sri Charan},
@@ -222,11 +222,17 @@ If you use this code or find our work helpful in your research, please consider 
   year         = {2025},
   publisher    = {GitHub},
   journal      = {GitHub repository},
-  howpublished = {\url{https://github.com/<your-username>/fas-vit}}
+  howpublished = {\url{https://github.com/charann-coder/fas}}
 }
 ```
 
 ---
 
 ## 📄 License
-This project is licensed under the MIT License. See the `LICENSE` file for
+This project is currently licensed as **All Rights Reserved – Research in Progress**.
+
+Copyright (c) 2025 Y Sri Charan
+
+This code and associated files are part of ongoing, unpublished research and are made available for academic review only. Redistribution, modification, or use of this code in any form is not permitted without explicit written permission from the author.
+
+Once the related research is formally published, this repository may be updated with a permissive open-source license (e.g., MIT).

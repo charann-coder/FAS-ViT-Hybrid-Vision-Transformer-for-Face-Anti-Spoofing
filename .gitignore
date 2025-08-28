@@ -1,0 +1,19 @@
+backup/
+LCC_dataset/
+*.log
+__pycache__/
+.DS_Store
+bin.py
+bin
+captures
+*.pth
+!checkpoints/epoch_19.pth
+FAS-ViT.zip
+epoch 11_results
+runs
+prev
+!ssl_checkpoint/best_epoch7.pth
+!ssl_checkpoint/metrics_ssl.csv
+Miniconda3-latest-Windows-x86_64.exe
+training_log.csv
+results/
