@@ -221,7 +221,6 @@ If you use this code or find our work helpful in your research, please consider 
   title        = {FAS-ViT: Hybrid Vision Transformer for Face Anti-Spoofing},
   year         = {2025},
   publisher    = {GitHub},
-  journal      = {GitHub repository},
   howpublished = {\url{https://github.com/charann-coder/fas}}
 }
 ```
