@@ -112,24 +112,18 @@ This project uses the **LCC-FASD dataset**, which can be downloaded directly usi
 
 3.  **(CRITICAL) Rename and Restructure the Dataset.**
     The training scripts expect the data to be in `train`, `val`, and `test` folders. You must rename the unzipped directories to match this structure.
-
-    -   Rename `LCC_FASD` to `LCC_dataset`.
-    -   Inside `LCC_dataset`, rename the subfolders as follows:
-        -   `LCC_FASD_training`   -> `train`
-        -   `LCC_FASD_development` -> `val`
-        -   `LCC_FASD_evaluation`   -> `test`
-
+    Just add the unziped folder into LCC_dataset folder,as shown below.
     Your final directory structure **must** look like this for the code to work:
     ```
     fas-vit/
-    ├── LCC_dataset/
-    │   ├── train/
+    ├── LCC_dataset/LCC_FASD
+    │   ├── LCC_FASD_development/
     │   │   ├── real/
     │   │   └── spoof/
-    │   ├── val/
+    │   ├── LCC_FASD_evaluation/
     │   │   ├── real/
     │   │   └── spoof/
-    │   └── test/
+    │   └── LCC_FASD_training/
     │       ├── real/
     │       └── spoof/
     ├── checkpoints/
