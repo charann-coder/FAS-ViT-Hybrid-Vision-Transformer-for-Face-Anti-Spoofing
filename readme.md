@@ -112,22 +112,28 @@ This project uses the **LCC-FASD dataset**, which can be downloaded directly usi
 
 3.  **(CRITICAL) Rename and Restructure the Dataset.**
     The training scripts expect the data to be in `train`, `val`, and `test` folders. You must rename the unzipped directories to match this structure.
-    Store the unziped dataset into LCC_dataset.
+
+    -   Rename `LCC_FASD` to `LCC_dataset`.
+    -   Inside `LCC_dataset`, rename the subfolders as follows:
+        -   `LCC_FASD_training`   -> `train`
+        -   `LCC_FASD_development` -> `val`
+        -   `LCC_FASD_evaluation`   -> `test`
+
     Your final directory structure **must** look like this for the code to work:
     ```
     fas-vit/
-    ├── LCC_dataset/LCC_FASD
-    │   ├── LCC_FASD_development/
+    ├── LCC_dataset/
+    │   ├── train/
     │   │   ├── real/
     │   │   └── spoof/
-    │   ├── LCC_FASD_evaluation/
+    │   ├── val/
     │   │   ├── real/
     │   │   └── spoof/
-    │   └── LCC_FASD_training/
+    │   └── test/
     │       ├── real/
     │       └── spoof/
     ├── checkpoints/
-    ├── configs/
+    ├── plot_results/
     └── ... (rest of the project files)
     ```
 
@@ -189,9 +195,6 @@ python test.py --ckpt checkpoints/epoch_19.pth --mode min_acer
 │   ├── test_confusion_matrix_calibrated.png
 │   ├── test_confusion_matrix_raw.png
 │   └── test_roc_curve.png
-├── .gitignore
-├── live_inference.py       # Script for live webcam demo
-├── model.py                # FASViTClassifier architecture definition
 ├── .gitignore
 ├── live_inference.py       # Script for live webcam demo
 ├── model.py                # FASViTClassifier architecture definition
