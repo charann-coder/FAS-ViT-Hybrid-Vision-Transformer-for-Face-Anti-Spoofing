@@ -82,8 +82,8 @@ Get the project up and running in a few simple steps.
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/charann-coder/fas.git
-cd fas
+https://github.com/charann-coder/FAS-ViT-Hybrid-Vision-Transformer-for-Face-Anti-Spoofing.git
+cd FAS-ViT-Hybrid-Vision-Transformer-for-Face-Anti-Spoofing
 ```
 
 #### 2. Create Environment & Install Dependencies
